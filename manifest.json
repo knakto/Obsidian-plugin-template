@@ -1,0 +1,10 @@
+{
+	"id": "obsgit",
+	"name": "ObsGit",
+	"version": "1.0.0",
+	"minAppVersion": "1.13.0",
+	"description": "",
+	"author": "knakto",
+	"authorUrl": "https://github.com/knakto",
+	"isDesktopOnly": true
+}
