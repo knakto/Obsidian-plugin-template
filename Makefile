@@ -18,8 +18,8 @@ $(NAME): $(OUTFILE) setup
 $(OUTFILE):
 	$(MKD) $(OUTPATH)
 	$(ESBUILD) $(MAIN) $(ESFLAGS) --outfile=$(OUTFILE)
-	if [ -f manifest.json ]; then cp manifest.json $(OUTPATH) fi
-	if [ -f style.css ]; then cp style.css $(OUTPATH) fi
+	if [ -f manifest.json ]; then cp manifest.json $(OUTPATH); fi
+	if [ -f style.css ]; then cp style.css $(OUTPATH); fi
 
 fclean:
 	$(RM) $(OUTPATH)
