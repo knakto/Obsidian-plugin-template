@@ -5,18 +5,18 @@ if ! npm -v 2>&1 1>/dev/null; then
 	exit 1
 else
 	echo 'init node project and typescript'
-	npm init -y
-	npm i --save-dev typescript esbuild obsidian
-	npx tsc --init
+	npm init -y &>/dev/null
+	npm i --save-dev typescript esbuild obsidian &>/dev/null
+	npx tsc --init &>/dev/null
 fi
 
 if [ ! -d .git ]; then
 	echo 'init git repository'
-	git init
+	git init &>/dev/null
 fi
 
 mkdir -p srcs
-curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/blob/main/srcs/main.ts" > srcs/main
-curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/main/Makefile" > Makefile
-curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/blob/main/.gitignore" > .gitignore
-curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/blob/main/manifest.json" > manifest.json
+curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/blob/main/srcs/main.ts" > srcs/main &>/dev/null
+curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/main/Makefile" > Makefile &>/dev/null
+curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/blob/main/.gitignore" > .gitignore &>/dev/null
+curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/blob/main/manifest.json" > manifest.json &>/dev/null
