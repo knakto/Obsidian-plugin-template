@@ -16,7 +16,7 @@ if [ ! -d .git ]; then
 fi
 
 mkdir -p srcs
-curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/blob/main/srcs/main.ts" > srcs/main >/dev/null 2>&1
+curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/main/srcs/main.ts" > srcs/main >/dev/null 2>&1
 curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/main/Makefile" > Makefile >/dev/null 2>&1
-curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/blob/main/.gitignore" > .gitignore >/dev/null 2>&1
-curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/blob/main/manifest.json" > manifest.json >/dev/null 2>&1
+curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/main/.gitignore" > .gitignore >/dev/null 2>&1
+curl -L -H "Accept: application/vnd.github.raw+json" "https://raw.githubusercontent.com/knakto/Obsidian-plugin-template/main/manifest.json" > manifest.json >/dev/null 2>&1
